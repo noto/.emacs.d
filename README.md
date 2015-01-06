@@ -1,5 +1,6 @@
 # .emacs.d
 
+	cd .emacs.d
 	cask install
 	vi inits/01_local.el
 	(and start emacs)
