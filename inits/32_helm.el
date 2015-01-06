@@ -1,4 +1,4 @@
-(helm-mode 1)
+;; (helm-mode 1)
 (setq helm-recentf-fuzzy-match t)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x f") 'helm-for-files)

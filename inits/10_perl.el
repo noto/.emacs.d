@@ -1,8 +1,4 @@
-;;(autoload 'perl-mode "cperl-mode.el" "Perl" t)
 ;; cperl-mode
-;(setq cperl-indent-level 4)
-;(setq cperl-continued-statement-offset 4)
-;(setq cperl-comment-column 40)
 (add-to-list 'auto-mode-alist '("\\.\\([pP][Llm]\\|al\\)\\'" . cperl-mode))
 (add-to-list 'interpreter-mode-alist '("perl" . cperl-mode))
 (add-to-list 'interpreter-mode-alist '("perl5" . cperl-mode))
