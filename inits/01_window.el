@@ -8,7 +8,7 @@
 (setq initial-frame-alist '((top . -0) (left . 0) (width . 80)
 ;			    (height . 52)
 			    ))
-
+;;http://stackoverflow.com/questions/92971/how-do-i-set-the-size-of-emacs-window
 (defun set-frame-size-according-to-resolution ()
   (interactive)
   (if (display-graphic-p)
