@@ -1,16 +1,8 @@
 ;;; exec-path-from-shell: the order may be important
 (when (memq window-system '(mac ns)) (exec-path-from-shell-initialize))
 
-(menu-bar-mode nil)
-(tool-bar-mode -1)
-(setq visible-bell t)
 (setq make-backup-files nil)
-(blink-cursor-mode 0)
-
 (set-default 'fill-column 74)
-(setq-default cursor-in-non-selected-windows nil)
-(setq-default line-spacing 0.2)
-(set-keyboard-coding-system 'utf-8) ; inline IME
 (setq-default show-trailing-whitespace t)
 
 ;; Key binding
@@ -37,7 +29,8 @@
 
 ;;; Mac
 (add-hook 'minibuffer-setup-hook 'mac-change-language-to-us)
-;; Emacs 24.3
+(set-keyboard-coding-system 'utf-8) ; inline IME
+;; Emacs 24.3 or later
 (setq default-input-method "MacOSX")
 (mac-set-input-method-parameter
  "com.google.inputmethod.Japanese.base" `title "あ")
