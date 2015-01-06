@@ -1,0 +1,6 @@
+(recentf-mode t)
+(setq recentf-max-saved-items 512)
+(setq recentf-exclude '(".recentf"))
+(setq recentf-auto-cleanup 10)
+(setq recentf-auto-save-timer (run-with-idle-timer 30 t 'recentf-save-list))
+(global-set-key (kbd "C-x r") 'helm-recentf)
